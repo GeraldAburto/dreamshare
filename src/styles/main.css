@@ -13,8 +13,15 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@300&display=swap');
 
-body {
+body, html {
     margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container {
+    margin: 0 auto;
 }
 
 .bg-color-light-red {
@@ -341,6 +348,7 @@ body {
 
 .footer .links a {
     text-decoration: none;
+    text-align: left;
 }
 
 .footer img {
@@ -351,9 +359,10 @@ body {
 /* end footer */
 
 /* Iphone 8 */
-@media (max-width: 375px) {
+@media (min-width: 200px) {
     .container {
-        margin: 0 8px;
+        padding: 0 8px;
+        min-width: 200px;
     }
 
     /* header */
@@ -415,13 +424,167 @@ body {
         flex-direction: column;
         text-align: center;
     }
+
+    .footer .links a {
+        margin: 0 8px;
+    }
     /* end footer */
 
 }
 
 /* Samsung galaxy s8 */
-@media (min-width: 376px) and (max-width: 1440px) {
+@media (min-width: 768px) and (max-width: 1440px) {
+    /* header */
+    .header {
+        height: 700px;
+    }
 
+    .login-signup {
+        text-align: right;
+    }
+
+    .header-wrapper {
+        position: relative;
+    }
+
+    .header-title {
+        width: 470px;
+        margin: 20% auto 0 auto;
+    }
+
+    .header-title h2 {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
+
+    .header-title h1 {
+        font-size: 52px;
+    }
+    /* end header */
+
+    /* how it works */
+    .steps {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .step {
+        height: 400px;
+        width: 236px;
+        margin-bottom: 12px;
+    }
+
+    .step-content {
+        margin: 0 20px;
+    }
+    /* end how it works */
+
+    /* partners */
+    .partners {
+        width: 492px;
+        margin: 0 auto;
+    }
+
+    .partners-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto auto;
+    }
+
+    .partners button {
+        width: 180px;
+        margin: 0 auto;;
+    }
+    /* end partners */
+
+    /* ideas */
+    .ideas-list {
+        display: grid;
+        grid-template-columns: repeat(3, 236px);
+        grid-template-rows: repeat(3, 310px);
+        grid-gap: 20px;
+    }
+
+    .idea {
+        height: 310px;
+    }
+
+    .idea-1 {
+        grid-row: 1;
+        grid-column: 1;
+    }
+
+    .idea-2 {
+        grid-row: 1;
+        grid-column: 2;
+    }
+
+    .idea-3 {
+        grid-row: 1;
+        grid-column: 3;
+    }
+
+    .idea-4 {
+        grid-row: 2;
+        grid-column: 1;
+    }
+
+    .idea-5 {
+        grid-row: 2;
+        grid-column-start: 2;
+        grid-column-end: 4;
+    }
+
+    .idea-6 {
+        grid-row: 3;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .idea-7 {
+        grid-row: 3;
+        grid-column: 3;
+    }
+    /* end ideas */
+
+    /* interest */
+    .interests {
+        padding: 60px 70px;
+    }
+
+    .interests form {
+        flex-direction: row;
+        justify-content: space-evenly;
+        height: 45px;
+    }
+
+    .interests form input {
+        width: 300px;
+    }
+    /* end interest */
+
+    /* footer */
+    .footer {
+        flex-direction: row;
+        justify-content: space-evenly;
+        text-align: left;
+    }
+
+    .footer .company, .footer .company .links {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer .company .links {
+        height: 147px;
+        justify-content: space-between;
+    }
+
+    .footer img {
+        margin:  20px 0;
+    }
+    /* end footer */
 }
 
 /* Ipad Pro */
