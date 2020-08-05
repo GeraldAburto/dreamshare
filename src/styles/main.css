@@ -161,7 +161,7 @@ body, html {
 }
 
 .header-title * {
-    margin: 0;
+    margin: 8px;
 }
 /* end header */
 
@@ -461,7 +461,7 @@ body, html {
 
     .header-title h2 {
         position: absolute;
-        top: 20px;
+        top: 12px;
         left: 20px;
     }
 
