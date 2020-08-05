@@ -18,6 +18,7 @@ body, html {
     padding: 0;
     width: 100vw;
     height: 100vh;
+    overflow-x: hidden;
 }
 
 .container {
@@ -116,6 +117,7 @@ body, html {
     border-radius: 40px;
     padding: 10px 20px;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .link, .link-rounded, .link-rounded-red {
@@ -433,7 +435,12 @@ body, html {
 }
 
 /* Samsung galaxy s8 */
-@media (min-width: 768px) and (max-width: 1440px) {
+@media (min-width: 768px) {
+    .container {
+        width: 748px;
+        margin: 0 auto;
+    }
+
     /* header */
     .header {
         height: 700px;
@@ -464,6 +471,9 @@ body, html {
     /* end header */
 
     /* how it works */
+    .how-it-works {
+        margin: 40px auto;
+    }
     .steps {
         flex-direction: row;
         justify-content: space-evenly;
@@ -483,7 +493,7 @@ body, html {
     /* partners */
     .partners {
         width: 492px;
-        margin: 0 auto;
+        margin: 0 auto 40px auto;
     }
 
     .partners-list {
@@ -588,6 +598,28 @@ body, html {
 }
 
 /* Ipad Pro */
-@media (min-width: 1441px) {
+@media (min-width: 1440px) {
+    .container {
+        width: 940px;
+        margin: 0 auto;
+    }
 
+    /* header */
+    .header-wrapper {
+        width: 940px;
+        margin: 0 auto;
+    }
+    /* end header */
+
+    /* how it works */
+    .step {
+        width: 300px;
+    }
+    /* end how it works */
+
+    /* ideas */
+    .ideas-list {
+        grid-template-columns: repeat(3, 300px);
+    }
+    /* end ideas */
 }
