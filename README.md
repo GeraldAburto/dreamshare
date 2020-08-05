@@ -16,3 +16,10 @@ Make sure you have gulp installed globally...
 ```sh
 $ npm install -g gulp
 ```
+
+
+Production build...
+
+```sh
+$ gulp build
+```
