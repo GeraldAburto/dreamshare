@@ -1,0 +1,430 @@
+:root {
+ /* Color palette */
+ --light-red: rgb(255, 78, 80);
+ --darker-grey: rgb(68, 68, 68);
+ --aqua: rgb(25, 212, 202);
+ --yellowish-orange: rgb(255, 167, 16);
+ --cornflower: rgb(102, 125, 243);
+ --brownish-grey: rgb(102, 102, 102);
+ --very-light-grey: rgb(247, 243, 242);
+ --very-light-pink: rgb(277, 277, 277);
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@300&display=swap');
+
+body {
+    margin: 0;
+}
+
+.bg-color-light-red {
+    background-color: var(--light-red);
+}
+
+.bg-color-darker-grey {
+    background-color: var(--darker-grey);
+}
+
+.bg-color-aqua {
+    background-color: var(--aqua);
+}
+
+.bg-color-yellowish-orange {
+    background-color: var(--yellowish-orange);
+}
+
+.bg-color-cornflower {
+    background-color: var(--cornflower);
+}
+
+.bg-color-brownish-grey {
+    background-color: var(--brownish-grey);
+}
+
+.bg-color-very-light-grey {
+    background-color: var(--very-light-grey);
+}
+
+.bg-color-very-light-pink {
+    background-color: var(--very-light-pink);
+}
+
+.white-text {
+    color: white;
+}
+
+.text-align-left {
+    text-align: left;
+}
+
+.darker-grey-text {
+    color: var(--darker-grey);
+}
+
+.hero-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 52px;
+    text-align: center;
+}
+
+.hero-sub-title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    font-size: 24px;
+    text-align: center;
+    line-height: 24.5px;
+}
+
+.mont-14, .mont-14-bold {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+
+.mont-14-bold {
+    font-weight: bold;
+}
+
+.section-header {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+    text-align: center;
+    word-break: break-word;
+}
+
+.body-text {
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    font-size: 18px;
+    text-align: center;
+    line-height: 14px;
+}
+
+.light-red-button {
+    background-color: var(--light-red);
+    text-align: center;
+    color: white;
+    border: none;
+    border-radius: 40px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.link, .link-rounded, .link-rounded-red {
+    background-color: transparent;
+    color: white;
+    text-decoration: none;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.link-rounded {
+    border: 2px solid white;
+    border-radius: 40px;
+}
+
+.link-rounded-red {
+    border: 2px solid var(--light-red);
+    color: var(--light-red);
+    border-radius: 40px;
+}
+
+/* header */
+.header {
+    height: 540px;
+    min-width: 320px;
+    background-image: linear-gradient(to bottom, rgba(255, 78, 80, .3), rgba(249, 212, 35, .3)), 
+    url("../assets/img/backgroundBitmap.png");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+.header-wrapper {
+    height: calc(100% - 40px);
+    width: calc(100% - 40px);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-content: baseline;
+}
+
+.header-title * {
+    margin: 0;
+}
+/* end header */
+
+/* how it works */
+.steps {
+    display: flex;
+}
+
+.step {
+    border-radius: 4px;
+    position: relative;
+}
+
+.step-content {
+    position: absolute;
+    bottom: 0;
+}
+
+.step-content h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 14px;
+    text-align: left;
+    word-break: break-word;
+}
+
+.step-content p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    text-align: left;
+    word-break: break-word;
+}
+
+.step-1 {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, .60)), 
+    url('../assets/img/Step1.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.step-2 {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, .60)), 
+    url('../assets/img/Step2.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.step-3 {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, .60)), 
+    url('../assets/img/Step3.png');
+    background-size: cover;
+    background-position: center;
+}
+/* end how it works */
+
+/* partners */
+.partners {
+    display: flex;
+}
+
+.partner {
+    width: 236px;
+    height: 205px;
+    margin: 0 auto 14px auto;
+    text-align: center;
+}
+
+.partner p {
+    margin: 0;
+}
+
+.avatar {
+    height: 120px;
+    width: 120px;
+    margin: 0 auto;
+    position: relative;    
+}
+
+.avatar-icon {
+    height: 32px;
+    width: 32px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* end partners */
+
+/* ideas */
+.ideas-list {
+    display: flex;
+}
+
+.idea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    width: 100%;
+    margin-bottom: 14px;
+}
+
+.idea-1 {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, .60)), 
+    url('../assets/img/Sports.png');;
+    background-size: cover;
+    background-position: center;
+}
+
+.idea-2 {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, .60)), 
+    url('../assets/img/Wellness.png');;
+    background-size: cover;
+    background-position: center;
+}
+
+.idea-3 {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, .60)), 
+    url('../assets/img/Extreme.png');;
+    background-size: cover;
+    background-position: center;
+}
+
+.idea-4 {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, .60)), 
+    url('../assets/img/Games.png');;
+    background-size: cover;
+    background-position: center;
+}
+
+.idea-5 {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, .60)), 
+    url('../assets/img/culture.png');;
+    background-size: cover;
+    background-position: center;
+}
+
+.idea-6 {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, .60)), 
+    url('../assets/img/enjoymentRelaxation.png');;
+    background-size: cover;
+    background-position: center;
+}
+
+.idea-7 {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, .60)), 
+    url('../assets/img/Traveling.png');;
+    background-size: cover;
+    background-position: center;
+}
+/* end ideas */
+
+/* interests */
+.interests form {
+    height: 90px;
+    display: flex;
+}
+
+.interests input {
+    padding: 10px;
+    border: 2px solid var(--brownish-grey);
+    border-radius: 4px;
+    background-color: white;
+}
+/* end interests */
+
+/* footer */
+.footer {
+    margin-top: 20px;
+    padding-bottom: 20px;
+    border-top: 2px solid var(--light-red);
+    width: 100%;
+    height: 224px;
+    display: flex;
+}
+
+.footer h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: var(--light-red);
+}
+
+.footer .links a {
+    text-decoration: none;
+}
+
+.footer img {
+    width: 110px;
+    height: 24px;
+    margin: 0 auto;
+}
+/* end footer */
+
+/* Iphone 8 */
+@media (max-width: 375px) {
+    .container {
+        margin: 0 8px;
+    }
+
+    /* header */
+    .header-title {
+        margin-top: 36%;
+        height: 234px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .header-title h1 {
+        font-size: 30px;
+    }
+    /* end header */
+    
+    /* how it works */
+    .steps {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .step {
+        width: 100%;
+        height: 240px;
+        margin-bottom: 12px;
+    }
+
+    .step-content {
+        margin: 0 20px;
+    }
+    /* end how it works */
+
+    /* partners */
+    .partners {
+        flex-direction: column;
+    }
+    /* end partners */
+
+    /* ideas */
+    .ideas-list {
+        flex-direction: column;
+    }
+
+    .idea {
+        height: 120px;
+    }
+    /* end ideas */
+
+    /* interests */
+    .interests form {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    /* end interests */
+
+    /* footer */
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+    /* end footer */
+
+}
+
+/* Samsung galaxy s8 */
+@media (min-width: 376px) and (max-width: 1440px) {
+
+}
+
+/* Ipad Pro */
+@media (min-width: 1441px) {
+
+}
